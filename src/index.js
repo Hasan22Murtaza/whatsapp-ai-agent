@@ -2,7 +2,7 @@ const express = require("express")
 const messageRouter = require('./routers/messageRouter')
 const whatsappclient = require('./services/WhatsappClient')
 
-whatsappclient.initialize();
+// whatsappclient.initialize();
 const app = express()
 app.use(express.json())
 app.use(messageRouter)
